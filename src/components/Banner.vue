@@ -29,7 +29,7 @@
             <h1 class="animated slideInDown animate3d">Helping you make <span class="orange">smart investments</span></h1>
             <p
               class="animated slideInRight animate3d"
-            >Our investment plans provides equall investment opportunities for everyone. You can begin with as little as &#8358;10,000.00. Why not join the winning train!</p>
+            >Our investment plans provides equall investment opportunities for everyone. You can begin with as little as &#8358;10,000.00. Why not join the winning team!</p>
              <router-link to="/signup" class="carousel-btn animated zoomIn animate3d">Get Started <i class="fas fa-long-arrow-alt-right"></i> </router-link>
           </div>
         </div>
