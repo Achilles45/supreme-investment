@@ -63,7 +63,7 @@
                     <div class="summary__card two pt-4">
                      <i class="fa fa-credit-card"></i>
                      <div class="content pl-4">
-                         <h6>Total Profit(60% plus your capital)</h6>
+                         <h6>Total Profit(80% plus your capital)</h6>
                          <h5>&#8358; {{ available_balance }}</h5>
                      </div>
                   </div>
@@ -84,7 +84,7 @@
               </div>
               </div>
               <hr>
-              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 60% of your investment and your capital would be paid back in 5 working days. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
+              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 80% of your investment and your capital would be paid back in 4 working days. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
               </div>
             <!--End of Dashboard
             =========================-->

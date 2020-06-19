@@ -83,7 +83,7 @@
               </div>
               <hr>
               <div></div>
-              <p>After making payment, please upload your proof of payment in your dashboard or send a mail to our support agent at gatewayinvestment09@gmail.com so your payment can be immediately approved.</p>
+              <p>After making payment, please upload your proof of payment in your dashboard or send a mail to our support agent at support@supremeinvestment.cash so your payment can be immediately approved.</p>
               </div>
             <!--End of Dashboard
             =========================-->
