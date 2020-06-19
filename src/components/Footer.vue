@@ -29,7 +29,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-12">
-                      <p>Gateway Investment Limited &copy; All Right Reserved, 2020</p>
+                      <p>Supreme Investment Limited &copy; All Right Reserved, 2020</p>
                   </div>
               </div>
           </div>
