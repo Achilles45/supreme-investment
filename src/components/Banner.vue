@@ -7,7 +7,7 @@
           <img class="carousel-img" src="../assets/images/banner4.jpeg" alt="First slide" />
           <div class="carousel-caption">
             <h1 class="animate__animated animate__bounceIn">EARN 80% of YOUR <span class="orange">INITIAL INVESTMENT IN 4 DAYS</span></h1>
-            <p>You can grow your initial investment to as much as 80% in 4 working day or in 24 hours when you select our promo plans. This applies to only new members. No stories, no stress.</p>
+            <p>You can grow your initial investment to as much as 80% in 4 days or in 24 hours when you select our promo plans. This applies to only new members. No stories, no stress.</p>
             <router-link to="/signup" class="carousel-btn animated zoomIn animate3d">Get Started <i class="fas fa-long-arrow-alt-right"></i> </router-link>
           </div>
         </div>

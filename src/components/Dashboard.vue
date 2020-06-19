@@ -84,7 +84,7 @@
               </div>
               </div>
               <hr>
-              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 80% of your investment and your capital would be paid back in 4 working days. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
+              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 80% of your investment and your capital would be paid back in 4 days. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
               </div>
             <!--End of Dashboard
             =========================-->

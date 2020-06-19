@@ -9,7 +9,7 @@
           <div class="col-md-5">
               <h2>Supreme <span class="orange">Investment</span></h2>
               <hr>
-              <p>Supreme Investment Company was created with the aim of eliminating poverty and hardship from Nigeria. It's a reliable and genuine platform created for the benefit of every Nigerian to achieve wealth and happiness by investing and getting back your investment in 4 working days for initial investment and 24 hours for our promo plans without any delay or stress in payment</p>
+              <p>Supreme Investment Company was created with the aim of eliminating poverty and hardship from Nigeria. It's a reliable and genuine platform created for the benefit of every Nigerian to achieve wealth and happiness by investing and getting back your investment in 4 days for initial investment and 24 hours for our promo plans without any delay or stress in payment</p>
                <router-link to="/signup" class="intro-btn animated zoomIn animate3d">Get Started <i class="fas fa-long-arrow-alt-right"></i> </router-link>
           </div>
       </div>
