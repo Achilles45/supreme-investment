@@ -13,8 +13,6 @@
                 <p>NO.12 Unity Close, Ijokoro Sango, Otta, Ogun State, Nigeria.</p>
                  <h6><i class="fa fa-envelope"></i>Email Address</h6>
                 <p>support@supremeinvestment.cash</p>
-                 <h6><i class="fa fa-phone"></i>Phone</h6>
-                <p><a href="tel:09056704960"> 09056704960</a></p>
               </div>
               <div class="col-md-4">
                   <h5>Payment Method</h5>
