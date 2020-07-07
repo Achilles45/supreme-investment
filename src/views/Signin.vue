@@ -17,7 +17,7 @@
                 <div v-if="loading" class="loading text-center">
                               <img src="../assets/images/loader.gif" class="loader" alt="">
                           </div>
-               <button type="submit" class="signup__btn">Login</button>
+               <button type="submit" class="signup__btn">LOGIN</button>
                <div class="bottom text-center pt-4">
                    <p>Yet to have an account? <router-link to="/signup">Sign Up</router-link></p>
                </div>
@@ -63,7 +63,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .signup{
-    background: $primary-color;
+    background: #E9E9E9;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -80,19 +80,17 @@ export default {
             }
             p{
                 padding-bottom: 1rem;
-                font-size: .9rem;
-                color: #627081;
             }
         form{
             input, select{
                 height: 3rem;
                 border-radius: 0px;
                 box-shadow: none;
-                // border:1px solid #000;
+                border:1px solid #000;
                 &::placeholder{
                     text-transform: uppercase;
                     font-size: .7rem;
-                    color: #627081;
+                    color: #000;
                 }
             }
             .small{
@@ -105,12 +103,10 @@ export default {
             }
             .signup__btn{
                 background: $secondary-color;
-                color: #fff;
+                color: #000;
                 padding: .8rem 2rem;
                 border: none;
                 width: 100%;
-                font-size: .9rem;
-                border-radius: 4px;
             }
         }
     }

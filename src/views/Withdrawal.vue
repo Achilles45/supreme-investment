@@ -13,7 +13,6 @@
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
                 <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr>
                     <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
-                     <li><router-link to="/dashboard/upload"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Upload Payment</router-link></li><hr>
                  <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
@@ -36,7 +35,7 @@
              <small>You can now make request to make withdrawal into your local bank when your investment has reached maturity</small>
              <hr>
               <div v-if="verifyuser == 'false'" class="red">
-                  You can't make withdrawals because your account or payment has not been verified.
+                  Your account has not been verified. Please make your payment for verification
               </div>
                <div class="row">
                    <div class="col-md-8">
@@ -47,21 +46,40 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="bank_name">Your Bank</label>
-                               <input type="text" class="form-control" disabled v-bind:value="user_bank">
+                                <small id="passwordHelpBlock" class="form-text text-muted">Select a bank where you have same names as registered here</small>
+                               <select type="text" class="form-control " id="bank" v-model="bank">
+                        <option selected>Select your Bank</option>
+                        <option value="access">Access Bank</option>
+                        <option value="citibank">Citibank</option>
+                        <option value="diamond">Diamond Bank</option>
+                        <option value="ecobank">Ecobank</option>
+                        <option value="fidelity">Fidelity Bank</option>
+                        <option value="fcmb">First City Monument Bank (FCMB)</option>
+                        <option value="first">First Bank of Nigeria</option>
+                        <option value="fsdh">FSDH Merchant Bank</option>
+                        <option value="gtb">Guarantee Trust Bank (GTB)</option>
+                        <option value="heritage">Heritage Bank</option>
+                        <option value="Keystone">Keystone Bank</option>
+                        <option value="rand">Rand Merchant Bank</option>
+                        <option value="skye">Skye Bank</option>
+                        <option value="stanbic">Stanbic IBTC Bank</option>
+                        <option value="standard">Standard Chartered Bank</option>
+                        <option value="sterling">Sterling Bank</option>
+                        <option value="suntrust">Suntrust Bank</option>
+                        <option value="union">Union Bank</option>
+                        <option value="uba">United Bank for Africa (UBA)</option>
+                        <option value="unity">Unity Bank</option>
+                        <option value="wema">Wema Bank</option>
+                        <option value="zenith">Zenith Bank</option>
+                        </select>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 mt-4">
                             <div class="form-group">
-                                <label for="account">Your Account Number</label>
-                                <input type="text" class="form-control" disabled v-bind:value="user_account_number">
+                                <input type="text" class="form-control mt-3" placeholder="Bank Account Number" v-model="account_number">
                             </div>
                         </div>
                     </div>
-                     <div class="form-group">
-                        <label for="account">Your Account Name</label>
-                        <input type="text" class="form-control" disabled v-bind:value="user_bank_name">
-                            </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -70,7 +88,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control"  v-bind="amount" placeholder="Amount to withdraw" v-model="amount">
+                                <input type="text" class="form-control"  v-bind="amount" placeholder="Amount to withdraw">
                         </div>
                         </div>
                     </div><div v-if="err" class="alert alert-danger animated slideInRight">
@@ -101,9 +119,8 @@ export default {
             plan:null,
             verifyuser:null,
             //Data for the withdrawal process
-            user_bank:null,
-            user_bank_name:null,
-            user_account_number:null,
+            bank:null,
+            account_number:null,
             date:null,
             amount:null,
             account_type:null,
@@ -131,10 +148,9 @@ export default {
         },
         //Function for the withdrawal process here
         withdraw(){
-           setTimeout(() => {
-               // Check if the user has filled the form
-           if(!this.user_bank || !this.user_bank_name ||!this.user_account_number|| !this.amount || !this.date){
-               this.err = 'Please completely fill the form and try again'
+           // Check if the user has filled the form
+           if(!this.bank || !this.account_number || !this.amount || !this.date){
+               this.err = 'Please refresh and try again'
                this.removeAlert()
            }else if(this.amount > this.investmentReturns){
                this.err = 'Transaction failed. You do not have sufficient balance in your wallet';
@@ -144,7 +160,6 @@ export default {
            else{
                this.success = 'Your withdrawal request was submitted successful. We will get back to you in 24 hours'
            }
-           }, 5000);
         },
          removeAlert(){
         setTimeout(() => {
@@ -163,10 +178,7 @@ export default {
                 this.email = doc.data().email,
                 this.account_type = doc.data().account_type
                 this.verifyuser = doc.data().verifyuser
-                this.id = doc.data().user_id,
-                this.user_bank = doc.data().user_bank,
-                this.user_bank_name = doc.data().user_bank_name,
-                this.user_account_number = doc.data().user_account_number
+                this.id = doc.data().user_id
             })
         })
     }
@@ -204,7 +216,7 @@ export default {
                 cursor: pointer !important;
                 // border-bottom: 1px solid #ccc;
                 line-height: 3;
-                font-size: .8rem;
+                font-size: .85rem;
                 opacity: .7;
                 color: #fff;
                 text-decoration: none !important;
@@ -217,17 +229,6 @@ export default {
     .dashboard__right{
         background: #fafafa;
         padding: 3rem 2.5rem;
-        .heading{
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  position: relative;
-                  .navbar__toggler{
-                      color:$primary-color;
-                      position: absolute;
-                      right: 5%;
-                  }
-              }
        small{
             color:#627081;
            font-size: .8rem;
@@ -309,7 +310,7 @@ export default {
                      font-size: .9rem;
                  }
                  .withraw_btn{
-                     background: $primary-color;
+                     background: $secondary-color;
                      color:#fff;
                      margin-top: 1.5rem;
                      border-radius: 3px;
@@ -346,7 +347,7 @@ export default {
 .navLeft{
     display: block !important;
     transition: all ease-in-out .5s;
-    width: 70%;
+    width: 64%;
     position: absolute;
     z-index: 100;
     bottom: 0 !important;
@@ -360,7 +361,7 @@ export default {
         position: relative;
     }
     .dashboard__left{
-        background: #252525 !important;
+        background: $primary-color !important;
         display: none;
     }
 .dashboard__right{
@@ -392,8 +393,5 @@ export default {
             border-radius: 3px;
             font-size: .85rem;
             opacity: .9;
-            a{
-                color:#fff !important;
-            }
         }
 </style>

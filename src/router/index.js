@@ -2,14 +2,16 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '../views/Index.vue'
 import Contact from '../views/Contact.vue'
+import Glossary from '../views/Glossary.vue'
+import Trading from '../views/Trading.vue'
 import Signup from '../views/Signup.vue'
+import Faqs from '../views/Faqs.vue'
 import Signin from '../views/Signin.vue'
 import Dashboard from '../views/Dashboard.vue'
-import Profile from '../views/Profile.vue'
+import Profile from '../views/Profile'
 import Payment from '../views/Payment.vue'
 import Withdrawal from '../views/Withdrawal.vue'
-import Upload from '../views/Upload'
-import firebase from 'firebase'
+
 Vue.use(VueRouter)
 
   const routes = [
@@ -32,6 +34,21 @@ Vue.use(VueRouter)
     component: Contact
   },
   {
+    path: '/glossary',
+    name: 'Glossary',
+    component: Glossary
+  },
+  {
+    path: '/how-to-trade',
+    name: 'Trading',
+    component: Trading
+  },
+  {
+    path: '/faqs',
+    name: 'Faqs',
+    component: Faqs
+  },
+  {
     path: '/signup',
     name: 'Signup',
     component: Signup
@@ -44,48 +61,31 @@ Vue.use(VueRouter)
   {
     path: '/dashboard/overview',
     name: 'dashboard',
-    component: Dashboard,
-    meta:{
-      requiresAuth: true
-    }
+    component: Dashboard
   },
   {
     path: '/dashboard/profile',
     name: 'Profile',
-    component: Profile,
-    meta:{
-      requiresAuth: true
-    }
+    component: Profile
   },
   {
     path: '/dashboard/payment',
     name: 'Payment',
-    component: Payment,
-    meta:{
-      requiresAuth: true
-    }
-  },
-  {
-    path: '/dashboard/upload',
-    name: 'Upload',
-    component: Upload,
-    meta:{
-      requiresAuth: true
-    }
+    component: Payment
   },
   {
     path: '/dashboard/withdrawal',
     name: 'Withdrawal',
-    component: Withdrawal,
-    meta:{
-      requiresAuth: true
-    }
+    component: Withdrawal
   },
 ]
 
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior(to, from, savedPositions){
+    return {x: 0, y: 0}
+  }
 })
 
 router.beforeEach((to, from, next) =>{
@@ -108,3 +108,4 @@ router.beforeEach((to, from, next) =>{
 
 
 export default router
+

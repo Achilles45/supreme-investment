@@ -16,7 +16,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-10 heading text-center">
             <h1>We provide you with investment opportunities</h1>
-            <p>Supreme Investment Company was created with the aim of eliminating poverty and hardship from Nigeria. It's a reliable and genuine platform created for the benefit of every Nigerian to achieve wealth and happiness by investing and getting back your investment in 4 days and 12hours for the promo plan without any delay or stress in payment.</p>
+            <p>The company provide you with access to exclusively secured and high returns investment opportunities.</p>
           </div>
           <div class="col-md-1"></div>
         </div>
@@ -35,7 +35,7 @@
            <div class="reason__card">
             <img src="../assets/images/wallet.svg" class="icons" alt="">
             <h5>Secure Withdrawals</h5>
-            <p>You can request for withdrawals after your investment has reached maturity and it will be paid directly into your local bank account.</p>
+            <p>You can request for withdrawals after your investment has reached maturity and it will be paid directly into your local bank account in at most 7 working days.</p>
           </div>
            <div class="reason__card">
             <img src="../assets/images/lock.svg" class="icons" alt="">
@@ -81,11 +81,11 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .about__wrapper{
-  background: linear-gradient(rgba(2,13,38,.7), rgba(2,13,38,.7)), url('../assets/images/home1.jpg');
+  background: linear-gradient(rgba(4,9,30,.8), rgba(4,9,30,.8)), url('../assets/images/banner4.jpg');
   background-position: center;
   background-size: cover;
   color: #fff;
-  padding: 5rem 0;
+  padding: 7rem 0;
   .text{
     h1{
       font-weight: 900;
@@ -101,14 +101,13 @@ export default {
       padding-top: 3rem;
       h1{
         font-weight: bold;
-        color: #000;
+        color: $primary-color;
         padding-bottom: 1rem;
         padding-top: 1rem;
       }
       p{
-        color: #627081;
+        color: #313131;
         line-height: 1.9;
-        font-size: .86rem;
       }
     }
   }
@@ -133,7 +132,7 @@ export default {
         }
         h5{
           font-weight: bold;
-          color: #2b2b2b;
+          color: $primary-color;
           padding: .7rem 0;
         }
         p{
