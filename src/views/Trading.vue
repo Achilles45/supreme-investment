@@ -58,7 +58,7 @@ components:{
         p{
             font-size: .9rem;
             line-height: 1.9;
-            opacity: .9;
+            opacity: .8;
         }
         .span{
             color: $secondary-color;

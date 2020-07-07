@@ -33,6 +33,12 @@ export default {
         .span{
             color: $secondary-color;
         }
+        p{
+            font-size: .95rem;
+            padding-top: 1rem;
+            line-height: 2;
+            opacity: .8;
+        }
     }
 }
 
