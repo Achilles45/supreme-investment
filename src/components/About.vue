@@ -20,7 +20,7 @@
                   <img src="../assets/images/book.png" class="card__img" alt="">
                   <h2>Trading Academy</h2>
                   <p>We take pride in making trading accessible for everyone.
-                    This is why we created the Dynamic Investment Academy consisting of numerous video tutorials, eBooks and many other educational materials.</p>
+                    This is why we created the Investmenttradefx Academy consisting of numerous video tutorials, eBooks and many other educational materials.</p>
                     <div class="bottom pt-4">
                         <router-link to="/signup" class="card__btn">ENROLL NOW</router-link>
                     </div>

@@ -6,8 +6,8 @@
                  <video src="../assets/images/video.mp4" controls class="img-fluid"></video>
               </div>
               <div class="col-md-6 text">
-                  <h2>ABOUT <span class="span">DYNAMIC INVESTMENT</span></h2>
-                  <p>Having proper information at your fingertips is crucial when it comes to making the very best trading decisions. Dynamic Investment comprehensive daily market reviews are a perfect resource for successful trading. <br><br> Dynamic Investment - Bitcoin Investment, Bitcoin Trading, Gold Investment, EFTs & Digital OPtions Trading. <br>Dynamic Investment is your leading cryptocurrency investment and trading platform that offer Bitcoin trading options, provides 24/7 customer support, high level of security, and stable deposits and withdrawals.</p>
+                  <h2>ABOUT <span class="span">Investmenttradefx</span></h2>
+                  <p>Having proper information at your fingertips is crucial when it comes to making the very best trading decisions. Investmenttradefx comprehensive daily market reviews are a perfect resource for successful trading. <br><br> Investmenttradefx - Bitcoin Investment, Bitcoin Trading, Gold Investment, EFTs & Digital OPtions Trading. <br>Investmenttradefx is your leading cryptocurrency investment and trading platform that offer Bitcoin trading options, provides 24/7 customer support, high level of security, and stable deposits and withdrawals.</p>
               </div>
           </div>
       </div>
@@ -33,9 +33,14 @@ export default {
         h2{
             text-transform: uppercase;
             font-weight: bolder;
+            padding-bottom: 1rem;
         }
         .span{
             color: $secondary-color
+        }
+        p{
+            line-height: 2;
+            font-size: .93rem;
         }
     }
 }

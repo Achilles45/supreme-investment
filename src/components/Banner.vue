@@ -6,8 +6,8 @@
           <div class="carousel-overlay"></div>
           <img class="carousel-img" src="../assets/images/banner1.jpg" alt="First slide" />
           <div class="carousel-caption">
-            <h1 class="animated bounceIn">EARN 60% PROFIT ON YOUR INVESTMENT<br><span class="text-color">IN 5 DAYS</span></h1>
-            <p>Make registration with Dynamic Investment and enjoy 60% profit in 5 working days</p>
+            <h1 class="animated bounceIn">EARN 500% PROFIT ON YOUR INVESTMENT<br><span class="text-color">IN 5 DAYS</span></h1>
+            <p>Make registration with Investmenttradefx and enjoy 500% profit in 5 working days</p>
             <router-link to="/signup" class="carousel-btn animated zoomIn animate3d">START NOW</router-link>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default {
     position: absolute;
     top: 10%;
     transform: translateX(-50%, -50%);
-    width: 50%;
+    width: 60%;
     text-align: left;
     color:#fff;
     h1 {

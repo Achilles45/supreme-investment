@@ -4,8 +4,8 @@
           <div class="row">
               <div class="col-md-6 text">
                   <h1>TRADE <span class="span">ON THE GO</span></h1>
-                  <h3 class="span">Trade anytime, anywhere with Dynamic Investment mobile trading!</h3>
-                  <p>Dynamic Trading ensures that you never miss out on a trading opportunity with a fully functional mobile site that has all of the features of the desktop so you can easily trade currencies, commodities, stocks and indices, wherever you are, whenever you desire. Just simply type dynamicinvestment.net into the web browser of your iPhone, Android or tablet device, log into your Dynamic Investment Up account and start trading immediately.</p>
+                  <h3 class="span">Trade anytime, anywhere with Investmenttradefx mobile trading!</h3>
+                  <p>Investmenttradefx trading ensures that you never miss out on a trading opportunity with a fully functional mobile site that has all of the features of the desktop so you can easily trade currencies, commodities, stocks and indices, wherever you are, whenever you desire. Just simply type Investmenttradefx.com into the web browser of your iPhone, Android or tablet device, log into your Investmenttradefx account and start trading immediately.</p>
               </div>
               <div class="col-md-6">
                   <img src="../assets/images/phone.png" class="img-fluid" alt="">
@@ -63,6 +63,8 @@ export default {
         }
         p{
             padding-top: 1rem;
+            font-size: .94rem;
+            line-height: 2;
         }
     }
     .step__img{
@@ -72,6 +74,8 @@ export default {
     }
     h5{
         font-size: 1rem;
+        font-size: .94rem;
+        line-height: 1.7;
     }
 }
 

@@ -15,21 +15,21 @@
                    <input type="tel" class="form-control" placeholder="Phone Number" v-model="phone">
                </div>
                <div class="form-group">
-                      <small id="passwordHelpBlock" class="form-text text-muted">Select your account type</small>
+                      <small id="passwordHelpBlock" class="form-text text-muted">Select Your Account Type</small>
                    <select v-model="account_type" class="form-control">
-                       <option value="" selected>Select Account Type</option>
-                       <option value="10000" selected>Executive Broker + Analyst- (10000) - Earn 60% In 5 Days</option>
-                       <option value="8000" selected>Executive Broker (8000) - Earn 60% In 5 Days</option>
-                       <option value="5000" selected>Executive Broker (5000) - Earn 60% In 5 Days</option>
-                       <option value="2000" selected>Senior Broker (2000) - Earn 60% In 5 Days</option>
-                       <option value="1500" selected>Senior Broker (1000) - Earn 60% In 5 Days</option>
-                       <option value="1000" selected>Junior Broker (500) - Earn 60% In 5 Days</option>
-                       <option value="500" selected>Junior Broker (100) - Earn 60% In 5 Days</option>
-                       <option value="50" selected>Starter (50) - Earn 60% In 5 Days</option>
+                       <option value="" selected disabled>Select Account Type</option>
+                       <option value="$10,000" selected>Executive Broker + Analyst- ($10,000) - Earn 500% In 5 Days</option>
+                       <option value="$8,000" selected>Executive Broker ($8,000) - Earn 500% In 5 Days</option>
+                       <option value="$5,000" selected>Executive Broker ($5,000) - Earn 500% In 5 Days</option>
+                       <option value="$2,000" selected>Senior Broker ($2,000) - Earn 500% In 5 Days</option>
+                       <option value="$1,000" selected>Senior Broker ($1,000) - Earn 500% In 5 Days</option>
+                       <option value="$500" selected>Junior Broker ($500) - Earn 500% In 5 Days</option>
+                       <option value="$200" selected>Junior Broker ($200) - Earn 500% In 5 Days</option>
+                       <option value="$100" selected>Starter ($100) - Earn 500% In 5 Days</option>
                    </select>
                </div>
                <div class="form-group">
-                   <small id="passwordHelpBlock" class="form-text text-muted">Select the country of residence</small>
+                   <small id="passwordHelpBlock" class="form-text text-muted">Select Your Country Of Residence</small>
                     <select id="country" v-model="country" class="form-control">
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -406,7 +406,7 @@ export default {
                 color: #000;
                 padding: .8rem 2rem;
                 border: 1px solid $secondary-color;
-                width: 60%;
+                width: 100%;
             }
         }
     }

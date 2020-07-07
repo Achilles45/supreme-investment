@@ -11,7 +11,7 @@
                   <div class="heading text-center">
                       <h4>BASIC</h4>
                   </div>
-                  <h6 class="text-center pt-4 pb-4">Minimum Deposit: $50</h6>
+                  <h6 class="text-center pt-4 pb-4">Minimum Deposit: $100</h6>
                   <div class="card__details">
                       <p><i class="fa fa-check-square"></i>&nbsp;&nbsp; <span class="bonus">10% BONUS</span></p>
                       <p><i class="fa fa-check-square"></i>&nbsp;&nbsp; Withdrawal process same day</p>
@@ -26,7 +26,7 @@
                   <div class="heading text-center">
                       <h4>STANDARD</h4>
                   </div>
-                  <h6 class="text-center pt-4 pb-4">Minimum Deposit: $1000</h6>
+                  <h6 class="text-center pt-4 pb-4">Minimum Deposit: $1,000</h6>
                   <div class="card__details">
                       <p><i class="fa fa-check-square"></i>&nbsp;&nbsp; <span class="bonus">50% BONUS</span></p>
                     <p><i class="fa fa-check-square"></i>&nbsp;&nbsp; Withdrawal process same day</p>
@@ -41,7 +41,7 @@
                   <div class="heading text-center">
                       <h4>PREMIUM</h4>
                   </div>
-                  <h6 class="text-center pt-4 pb-4">Minimum Deposit: $2000</h6>
+                  <h6 class="text-center pt-4 pb-4">Minimum Deposit: $5,000</h6>
                   <div class="card__details">
                       <p><i class="fa fa-check-square"></i>&nbsp;&nbsp; <span class="bonus">75% BONUS</span></p>
              <p><i class="fa fa-check-square"></i>&nbsp;&nbsp; Withdrawal process same day</p>
@@ -56,7 +56,7 @@
                   <div class="heading text-center">
                       <h4>DELUEXE</h4>
                   </div>
-                  <h6 class="text-center pt-4 pb-4">Minimum Deposit: $3000</h6>
+                  <h6 class="text-center pt-4 pb-4">Minimum Deposit: $10,000</h6>
                   <div class="card__details">
                       <p><i class="fa fa-check-square"></i>&nbsp;&nbsp; <span class="bonus">CUSTOM MADE BONUS</span></p>
                        <p><i class="fa fa-check-square"></i>&nbsp;&nbsp; Withdrawal process same day</p>

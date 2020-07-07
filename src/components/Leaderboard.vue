@@ -3,7 +3,7 @@
       <div class="container">
           <div class="row">
              <div class="col-md-7 text">
-                 <h1><span class="span">DYNAMIC INVESTMENT</span> LEADERBOARD</h1>
+                 <h1><span class="span">Investmenttradefx </span> LEADERBOARD</h1><br>
                  <h2 class="span">This Week Top Trades</h2>
                     <table class="table table-bordered rank">
                         <thead>
@@ -68,7 +68,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .leaderboard{
-    padding: 2rem 0;
+    padding: 3rem 0;
     background:url('../assets/images/section-banner4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
