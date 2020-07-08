@@ -335,20 +335,19 @@ export default {
                 this.loading = false
                 firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
                 .then((cred)=>{
-                     db.collection('users').add({
-                        name:this.name,
-                        phone:this.phone,
-                        email:this.email,
-                        account_type:this.account_type,
-                        country:this.country,
-                        user_id:cred.user.uid,
-                        available_balance:'0',
-                        verifyuser:'false',
-                        bank_name: '',
-                        account_number:'',
-                        account_name:'',
-                        wallet_address:''
-
+                    db.collection("users").doc(this.email).set({
+                    name:this.name,
+                    phone:this.phone,
+                    email:this.email,
+                    account_type:this.account_type,
+                    country:this.country,
+                    user_id:cred.user.uid,
+                    available_balance:'0',
+                    verifyuser:'false',
+                    bank_name: '',
+                    account_number:'',
+                    account_name:'',
+                    wallet_address:''
                 })
                 this.$router.push({name: 'dashboard'})
                 })
@@ -407,6 +406,7 @@ export default {
                 padding: .8rem 2rem;
                 border: 1px solid $secondary-color;
                 width: 100%;
+                outline: none;
             }
         }
     }

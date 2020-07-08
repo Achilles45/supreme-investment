@@ -76,7 +76,7 @@
     </div>
     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
       <div class="card-body">
-        Opening an account is very easy all you need is to record your first name, last name, phone number and e-mail. You can register by clicking here "here link to register page" If you encounter any problems while opening an account, please contact our support team at [info@bfxfinanceup.com]
+        Opening an account is very easy all you need is to record your first name, last name, phone number and e-mail.
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@
     </div>
     <div id="collapseSix" class="collapse" aria-labelledby="collapseSix" data-parent="#accordion">
       <div class="card-body">
-      There is no cost to register and open and account with us, however in order for you to begin trading, a deposit will be mandatory. That may require, entering your credit card/ banking information.
+      There is no cost to register and open and account with us, however in order for you to begin trading, a deposit will be mandatory.
       </div>
     </div>
   </div>
@@ -112,7 +112,7 @@
     <div class="card-header" id="headingEight">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#headingEight" aria-expanded="false" aria-controls="headingEight">
-         HOW SECURE IS DYNAMIC INVESTMENT COMPANY
+         HOW SECURE IS INVESTMENTTRADEFX COMPANY
         </button>
       </h5>
     </div>
@@ -146,7 +146,7 @@
     </div>
     <div id="headingTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
       <div class="card-body">
-        The smallest account that we offer is for $50.
+        The smallest account that we offer is for $100.
       </div>
     </div>
   </div>
@@ -188,7 +188,7 @@
     </div>
     <div id="headingThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
       <div class="card-body">
-       Once a withdrawal request has been submitted it takes up to 7 business days for us to process your withdrawal. After your withdrawal has been processed it takes between 7-10 business days for a credit card withdrawal to show on your card and up to five business days for a wire withdrawal to appear in your bank account.
+      We are very simple and customer-centric focused, and so we don't stress our traders or investors. You can withdraw your profits after 5 working days directly to your local bank account. No stories whatsoever!
       </div>
     </div>
   </div>
@@ -244,7 +244,7 @@
     </div>
     <div id="headingSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordion">
       <div class="card-body">
-        In order to submit a request, go to the withdrawal tab in My Account page.
+        In order to submit a request, go to the withdrawal tab in My Account page or your dashboard.
       </div>
     </div>
   </div>
@@ -288,8 +288,8 @@ A Swift Code is a unique identifier for each bank that is used to transfer funds
     </div>
     <div id="headingTewnty" class="collapse" aria-labelledby="headingTewnty" data-parent="#accordion">
       <div class="card-body">
-      The minimum trade amount is 25 USD, GBP or EUR in all cases except 60 Seconds trades. On 60 Seconds trades, the minimum trade amount is 5 USD, GBR or EUR.
-The maximum trade amount on the platform is 5000 USD, GBP or EUR. On 60 Seconds trades, the maximum trade amount is 1000 USD, GBP or EUR.
+      The minimum trade amount is 100 USD, GBP or EUR in all cases except 60 Seconds trades. On 60 Seconds trades, the minimum trade amount is 5 USD, GBR or EUR.
+The maximum trade amount on the platform is 10,000 USD, GBP or EUR. On 60 Seconds trades, the maximum trade amount is 1000 USD, GBP or EUR.
       </div>
     </div>
   </div>
@@ -303,7 +303,7 @@ The maximum trade amount on the platform is 5000 USD, GBP or EUR. On 60 Seconds 
     </div>
     <div id="headingTwentyOne" class="collapse" aria-labelledby="headingTwentyOne" data-parent="#accordion">
       <div class="card-body">
-     On our platform we display rates from a live Reuters feed that have been adapted using FX Finance Up algorithms. The rates on our platform are the rates at which we are willing to sell the CFDs.
+     On our platform we display rates from a live Reuters feed that have been adapted using Investmenttradefx algorithms. The rates on our platform are the rates at which we are willing to sell the CFDs.
       </div>
     </div>
   </div>
@@ -367,7 +367,7 @@ The maximum trade amount on the platform is 5000 USD, GBP or EUR. On 60 Seconds 
     <div class="card-header" id="headingTwentySix">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#headingTwentySix" aria-expanded="false" aria-controls="headingTwentySix">
-         CAN I OPEN MORE THAN ONE ACCOUNT WITH DYNAMIC INVESTMENT?
+         CAN I OPEN MORE THAN ONE ACCOUNT WITH INVESTMENTTRADEFX INVESTMENT?
         </button>
       </h5>
     </div>
@@ -401,7 +401,7 @@ The maximum trade amount on the platform is 5000 USD, GBP or EUR. On 60 Seconds 
     </div>
     <div id="headingTwentyEight" class="collapse" aria-labelledby="headingTwentySix" data-parent="#accordion">
       <div class="card-body">
-   If you forgot your password you can contact us on [info@dynamicinvestment.com].
+   If you forgot your password you can contact us using the contact page.
       </div>
     </div>
   </div>
@@ -471,6 +471,8 @@ components:{
         background: #000;
         .card-header{
           border-bottom: .5px solid #ccc;
+          outline: none;
+          box-shadow: none;
           .btn-link{
             color: #fff !important;
             font-size: .9rem;
