@@ -51,16 +51,6 @@
                   Please, contact admin for payment details or whatsapp only +19146508213
               </div>
                   <div class="summary__wrapper">
-                  <div class="summary__card two pt-4">
-                     <!-- <i class="fa fa-home"></i> -->
-                     <div class="content pl-4">
-                         <!-- <h6>Bank Accounts</h6> -->
-                         <h6>Bank Name: {{ bank_name}}</h6>
-                         <hr>
-                         <h6>Account Number:  {{ account_number }}</h6>
-                         <h6>Account Name:  {{ account_name }}</h6>
-                     </div>
-                  </div>
                     <!-- <div class="summary__card three pt-4">
                      <i class="fa fa-cubes"></i>
                      <div class="content pl-4">
