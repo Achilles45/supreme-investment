@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <Topbar />
+    <Overlay />
+    <!-- <Topbar />
     <Navbar />
     <Banner />
     <About />
@@ -8,16 +9,17 @@
     <VideoSection />
     <Analysis />
     <Leaderboard />
-    <Trade />
+    <Trade /> -->
     <!-- <Market /> -->
     <!-- <Testimonials /> -->
     <!-- <AppBanner /> -->
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Overlay from '@/components/Overlay.vue'
 import Topbar from '@/components/Topbar.vue'
 import Navbar from '@/components/Navbar.vue'
 import Banner from '@/components/Banner.vue'
@@ -34,6 +36,7 @@ import Footer from '@/components/Footer.vue'
 export default {
   name: 'Index',
   components:{
+    Overlay,
     Topbar,
     Navbar,
     Banner,
